@@ -1,0 +1,180 @@
+:root {
+    --primary-color: #2f3e46;
+    --accent-color: #354f52;
+    --accent2-color: #52796f;
+    --accent3-color: #84a98c;
+    --accent4-color: #e9ede6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1rem;
+}
+
+body {
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    display: block;
+    background-color: var(--accent4-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    /* color: var(--accent4-color); */
+}
+
+h1 {
+    color: var(--primary-color);
+    margin: 1rem;
+    display: block;
+    text-align: center;
+    font-family: "Cookie", cursive;
+    font-size: 3rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid var(--accent3-color);
+    padding: 2px;
+    margin: 0 0 1rem 1rem;
+}
+
+.about-resources {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    border: 1px solid var(--accent3-color);
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.card h2 {
+    color: white;
+    background-color: var(--accent2-color);
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto min-content auto;
+}
+
+.about h3 {
+    color: var(--primary-color);
+    text-align: center;
+    border-bottom: 1px solid var(--accent3-color);
+    padding: 2px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.about img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    margin: 1rem;
+}
+
+.about p {
+    padding: 10px;
+    margin: 5px 0 0 10px;
+}
+
+.new-mexico {
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: .9rem;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+.new-mexico img {
+    margin: 0px .5rem;
+}
+
+.new-mexico figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+.resource-list {
+    grid-row: 2 / 4;
+    padding: 0;
+    list-style-type: disc;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    width: fit-content;
+    align-content: center;
+}
+
+.resource-list li {
+    margin: .25rem 0;
+    text-align: left;
+}
+
+.resource-list a {
+    color: var(--accent-color);
+}
+
+.resource-list a:hover {
+    color: var(--primary-color);
+}
+
+footer {
+    padding: 30px;
+    background-color: var(--accent3-color);
+    text-align: center;
+}

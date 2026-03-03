@@ -1,14 +1,82 @@
+<!-- March 2 2026 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Pam Christison</title>
+    <meta name="description"
+        content="Pam Christison | WDD 131 - Dynamic Web Fundamentals | Home Page assignment - all about me resources">
+    <meta name="author" content="Pam Christison">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <p>Pam Christison index page</p>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/pamchristison/" target="_blank">Linkedin profile</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=p12#p12"
+                target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Pam Christison</h1>
+        <div class="about-resources"> <!-- use a grid to make the columns for the two cards -->
+            <section class="card"> <!-- use a grid to line up the card -->
+                <h2>About Me</h2>
+                <div class="about"> <!-- use another grid to line up the material in the first card -->
+                    <p>I'm a mom, a chemical engineer, a patent analyst, and I'm studying Computer Science. My
+                        family and I love to travel, create, and love being members of the Church of Jesus
+                        Christ of Latter-day Saints. Right now I am a seminary teacher and also the ward organist,
+                        having the powerful ability to choose the music every Sunday. </p>
+                    <img src="images/profile.webp" alt="Pam Christison">
+                    <h3>Albuquerque, New Mexico</h3>
+                    <div class="new-mexico">
+                        <figure>
+                            <img src="images/new-mexico-flag.webp" alt="The New Mexico flag">
+                            <figcaption>New Mexico state flag</figcaption>
+                        </figure>
+                        <p>New Mexico is a southwestern U.S. state known for its striking desert and mountain
+                            landscapes,
+                            rich
+                            Native American and Hispanic heritage, and long, layered history. It is home to diverse
+                            geography
+                            ranging
+                            from high desert mesas and red rock formations to forested mountains. </p>
+                    </div>
+                </div>
+            </section>
+            <section class="card"> <!-- use a grid to line up the card -->
+                <h2>Web Dev Resources</h2>
+                <ul class="resource-list">
+                    <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ☀️ Pam Christison ☀️ New Mexico, USA</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+
 </body>
 
 </html>
