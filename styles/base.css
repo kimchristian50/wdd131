@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+header {
+    padding: 1rem 0;
+    color: white;
+}
+
 #course-title {
     display: block;
     text-align: center;
@@ -33,6 +38,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    color: white;
 }
 
 nav a {
@@ -40,13 +46,15 @@ nav a {
     display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
     border-radius: 5px;
 }
 
 nav a:hover {
     background-color: var(--accent2-color);
     /* color: var(--accent4-color); */
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
