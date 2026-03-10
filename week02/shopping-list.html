@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My shopping list</h1>
+
+    <form>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </form>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        //create three variable that hold references to the elements. querySelector is findingthe first <ul> <input> and <button> on the page
+        const list = document.querySelector('ul');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+        button.addEventListener('click', (e) => {
+            // Step 3: Prevent the page from refreshing
+            // This is vital when working with <form> tags!
+            // This is the magic line that stops the page refresh!
+            e.preventDefault();
+            let myItem = input.value; // step 4. store current value
+            input.value = ''; // step 5. clear the input
+            // Step 6: Create 3 new elements
+            const listItem = document.createElement('li');
+            const listText = document.createElement('span');
+            const listBtn = document.createElement('button');
+
+            // Step 7: Put them together (Append children)
+            listItem.appendChild(listText);
+            listItem.appendChild(listBtn);
+
+            // Step 8: Add the text
+            listText.textContent = myItem;
+            listBtn.textContent = 'Delete';
+            // Step 9: Append to the actual list on the screen
+            list.appendChild(listItem);
+
+            // Step 10: The Delete handler
+            listBtn.addEventListener('click', () => {
+                list.removeChild(listItem);
+            });
+
+            // Step 11: Focus the input for the next item
+            input.focus();
+        });
+
+    </script>
+</body>
+
+</html>
