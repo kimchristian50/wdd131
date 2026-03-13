@@ -4,6 +4,8 @@
     --accent2-color: #52796f;
     --accent3-color: #84a98c;
     --accent4-color: #e9ede6;
+    --white: #ffffff;
+    --black: #000000;
 }
 
 * {
@@ -20,7 +22,7 @@ body {
 }
 
 header {
-    color: black;
+    color: var(--black);
 }
 
 /* Mobile View */
@@ -31,7 +33,7 @@ header {
     text-decoration: none;
     padding: 0.5rem 1rem;
     background-color: transparent;
-    color: white;
+    color: var(--white);
     order: 2;
 }
 
@@ -59,7 +61,7 @@ header {
     text-decoration: none;
     font-weight: 700;
     transition: 0.5s;
-    color: white;
+    color: var(--white);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -69,7 +71,7 @@ header {
 
 .navigation a:hover,
 .navigation a:active {
-    color: white;
+    color: var(--white);
     background-color: var(--accent2-color);
 }
 
@@ -85,7 +87,7 @@ nav p {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: var(--white);
     padding-left: 1rem;
 }
 
@@ -129,7 +131,7 @@ main {
 }
 
 .album img {
-    border: 3px solid white;
+    border: 3px solid var(--white);
     width: 100%;
     /* height: 250px; */
     object-fit: cover;
@@ -142,7 +144,7 @@ main {
 }
 
 figure {
-    background-color: white;
+    background-color: var(--white);
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
