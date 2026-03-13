@@ -1,0 +1,52 @@
+@media screen and (min-width: 750px) {
+
+    .navigation {
+        display: flex;
+        flex-basis: auto;
+        order: 2;
+        justify-content: flex-end;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: white;
+        padding: 1.5rem 1.5rem;
+        display: block;
+        width: 100%;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+    .navigation a:hover {
+        background-color: var(--accent2-color);
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+        background-color: var(--accent-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+    }
+
+    nav p {
+        display: block;
+        font-size: 2rem;
+        margin-left: 2rem;
+        order: 1;
+    }
+
+
+    .navigation li {
+        display: block;
+    }
+
+    .album {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
