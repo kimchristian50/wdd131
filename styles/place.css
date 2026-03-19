@@ -82,9 +82,9 @@ h1 {
 
 footer {
     padding: 30px;
-    background-color: var(--accent3-color);
-    color: var(--accent4-color);
+    background-color: var(--accent2-color);
+    color: var(--white);
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-top: 1rem solid var(--primary-color);
 }
