@@ -1,8 +1,7 @@
 :root {
     --primary-color: #2d3158;
     --accent-color: #8d99ae;
-    --accent2-color: #d90429;
-    --accent3-color: #ef233c;
+    --accent2-color: #ac021e;
     --accent4-color: #edf2f4;
     --white: #ffffff;
     --black: #000000;
@@ -23,7 +22,7 @@ body {
 
 h1 {
     background-color: var(--accent2-color);
-    color: var(--accent4-color);
+    color: var(--white);
     text-align: center;
     font-size: 2rem;
     padding: 2rem;
