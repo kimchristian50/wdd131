@@ -142,7 +142,6 @@ main {
     height: 250px;
     object-fit: cover;
     margin-top: auto;
-    border: 1px solid rgb(255 255 255);
     box-shadow: 5px 5px 15px rgb(0, 0, 0, 50%);
 }
 
