@@ -1,0 +1,49 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid gray;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 1rem;
+    color: black;
+    padding: .5rem;
+}
+
+/* .descriptors { */
+/* background-color: rgb(53, 53, 54); */
+/* } */
+
+
+
+
+
+thead th {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+    border: none;
+}
+
+thead tr:nth-child(2) th:nth-child(n+2) {
+    /* this says the second row, then starting with the 2nd child select that and every child after it */
+    background-color: #333;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 12px 12px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(241, 239, 239);
+}
+
+tbody td:first-child {
+    font-weight: bold;
+}

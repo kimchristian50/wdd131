@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    margin: 1rem;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: black;
+}
+
+img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    animation: fade 15s;
+}
+
+footer {
+    padding: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* the images gradually fade in */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
