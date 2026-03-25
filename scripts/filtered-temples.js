@@ -30,8 +30,8 @@ const temples = [
         location: "Aba, Nigeria",
         dedicated: "2005, August, 7",
         area: 11500,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+        imageUrl: "images/aba-nigeria-temple.jpg";
+        // "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
     },
     {
         templeName: "Manti Utah",
@@ -71,7 +71,7 @@ const temples = [
         dedicated: "1986, January, 10",
         area: 9600,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/lima-peru-temple/lima-peru-temple-42068.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
     {
         templeName: "Mexico City Mexico",
@@ -113,14 +113,14 @@ const temples = [
     // imageUrl:
     // "https://churchofjesuschristtemples.org/assets/img/temples/copenhagen-denmark-temple/copenhagen-denmark-temple-16169-main.jpg"
     // },
-    {
-        templeName: "Lubbock Texas",
-        location: "Lubbock, Texas",
-        dedicated: "2002, April, 21",
-        area: 16498,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/lubbock-texas-temple/lubbock-texas-temple-13996-main.jpg"
-    },
+    // {
+    // templeName: "Lubbock Texas",
+    // location: "Lubbock, Texas",
+    // dedicated: "2002, April, 21",
+    // area: 16498,
+    // imageUrl:
+    // "https://churchofjesuschristtemples.org/assets/img/temples/lubbock-texas-temple/lubbock-texas-temple-13996-main.jpg"
+    // },
     // {
     // templeName: "Jordan River Utah",
     // location: "South Jordan, Utah",
