@@ -71,7 +71,7 @@ const temples = [
         dedicated: "1986, January, 10",
         area: 9600,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/lima-peru-temple/lima-peru-temple-42068.jpg"
     },
     {
         templeName: "Mexico City Mexico",
