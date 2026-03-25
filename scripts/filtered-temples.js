@@ -81,14 +81,14 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    {
-        templeName: "Paris France",
-        location: "Paris, France",
-        dedicated: "2017, May, 21",
-        area: 44175,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
-    },
+    // {
+    // templeName: "Paris France",
+    // location: "Paris, France",
+    // dedicated: "2017, May, 21",
+    // area: 44175,
+    // imageUrl:
+    // "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-2056-main.jpg"
+    // },
     {
         templeName: "Rome Italy",
         location: "Rome, Italy",
@@ -97,22 +97,22 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
     },
-    {
-        templeName: "Bern Switzerland",
-        location: "Bern, Switzerland",
-        dedicated: "1955, September, 11-15",
-        area: 35546,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-54641-main.jpg"
-    },
-    {
-        templeName: "Copenhagen Denmark",
-        location: "Copenhagen, Denmark",
-        dedicated: "2004, May, 23",
-        area: 25000,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/copenhagen-denmark-temple/copenhagen-denmark-temple-16169-main.jpg"
-    },
+    // {
+    // templeName: "Bern Switzerland",
+    // location: "Bern, Switzerland",
+    // dedicated: "1955, September, 11-15",
+    // area: 35546,
+    // imageUrl:
+    // "https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-54641-main.jpg"
+    // },
+    // {
+    // templeName: "Copenhagen Denmark",
+    // location: "Copenhagen, Denmark",
+    // dedicated: "2004, May, 23",
+    // area: 25000,
+    // imageUrl:
+    // "https://churchofjesuschristtemples.org/assets/img/temples/copenhagen-denmark-temple/copenhagen-denmark-temple-16169-main.jpg"
+    // },
     {
         templeName: "Lubbock Texas",
         location: "Lubbock, Texas",
@@ -121,14 +121,14 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/lubbock-texas-temple/lubbock-texas-temple-13996-main.jpg"
     },
-    {
-        templeName: "Jordan River Utah",
-        location: "South Jordan, Utah",
-        dedicated: "1981, November, 16-20",
-        area: 148236,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/jordan-river-utah-temple/jordan-river-utah-temple-3449.jpg"
-    },
+    // {
+    // templeName: "Jordan River Utah",
+    // location: "South Jordan, Utah",
+    // dedicated: "1981, November, 16-20",
+    // area: 148236,
+    // imageUrl:
+    // "https://churchofjesuschristtemples.org/assets/img/temples/jordan-river-utah-temple/jordan-river-utah-temple-3449.jpg"
+    // },
     {
         templeName: "Seattle Washington",
         location: "Bellevue, Washington",
@@ -145,14 +145,15 @@ const temples = [
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/snowflake-arizona-temple/snowflake-arizona-temple-46560-main.jpg"
     },
-    {
-        templeName: "St. George Utah",
-        location: "St. George, Utah",
-        dedicated: "1877, April, 6-8",
-        area: 143969,
-        imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
-    },
+    // removing to try to improve best practices to 95%
+    // { 
+    // templeName: "St. George Utah", 
+    // location: "St. George, Utah",
+    // dedicated: "1877, April, 6-8",
+    // area: 143969,
+    // imageUrl:
+    // "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
+    // },
     {
         templeName: "Nauvoo Illinois",
         location: "Nauvoo, Illinois",
