@@ -49,4 +49,8 @@
     .album {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    section:hover {
+        transform: translateY(-5px);
+    }
 }

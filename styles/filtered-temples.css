@@ -16,9 +16,6 @@
 
 body {
     font-size: 16px;
-    /* font-family: "Roboto", */
-    /* removing this because trying to improve performance to 95% */
-    /* sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--accent4-color);
 }
@@ -69,12 +66,6 @@ header {
 
 .navigation li:last-child a {
     border-bottom: none;
-}
-
-.navigation a:hover,
-.navigation a:active {
-    color: var(--white);
-    background-color: var(--accent2-color);
 }
 
 nav {
@@ -144,7 +135,7 @@ main {
     height: 250px;
     object-fit: cover;
     margin-top: auto;
-    box-shadow: 5px 5px 15px rgb(0, 0, 0, 50%);
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 25%);
 }
 
 .album h3 {
@@ -177,10 +168,6 @@ section p:last-of-type {
 
 .label {
     font-size: 0.8rem;
-}
-
-section:hover {
-    transform: translateY(-5px);
 }
 
 footer {
