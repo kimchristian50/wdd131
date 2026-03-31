@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #fcf9e8;
+    --primary2-color: #fafaf9;
+    --accent-color: #000814;
+    --accent2-color: #001d3d;
+    --accent3-color: #033566;
+    --accent4-color: #274c77;
+    --accent5-color: #6096ba;
+    --accent6-color: #a3cef1;
+    --accent7-color: #8b8c89;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 349;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    font-weight: bold;
+    padding: 5px 5px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: var(--accent2-color);
+    background-color: rgb(0, 0, 0, 5%);
+}
+
+nav,
+p,
+section,
+ul {
+    margin: 15px;
+    padding: 8px;
+    color: var(--accent2-color);
+}
+
+body {
+
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent3-color)
+}
+
+ul {
+    list-style-type: "-  ";
+}
+
+li {
+    margin: 15px;
+}
+
+section:not(.wireframe)> :not(:first-child) {
+    border: 3px solid var(--accent5-color);
+    border-radius: 20px;
+}
+
+.wireframe figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.wireframe img {
+    margin: 15px;
+    max-width: 100%;
+    height: auto;
+}
