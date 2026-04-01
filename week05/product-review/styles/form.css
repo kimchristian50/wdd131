@@ -106,11 +106,6 @@ h1 {
     padding-bottom: 0;
 }
 
-.review-form .feature-header {
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
 .review-form .sub-text {
     padding-top: 0;
     font-style: italic;
@@ -195,10 +190,8 @@ footer {
     color: white;
     display: block;
     background-color: var(--accent2-color);
-    color: white;
     margin: 2rem;
     margin-top: 0;
-    padding: 1rem;
 }
 
 .label {

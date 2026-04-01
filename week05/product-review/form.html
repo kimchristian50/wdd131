@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@349&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 
 </head>
 
@@ -20,11 +21,10 @@
         <h1>Product Review</h1>
         <form method="get" action="review.html" class="review-form">
             <fieldset>
-                <label>Product Name
-                    <select name="product" id="product" required>
-                        <option value="" disabled selected>Select a Product...</option>
-                    </select>
-                </label>
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required disabled>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
 
                 <div class="rating-container">
                     <span class="label">Overall Rating</span>
@@ -46,7 +46,8 @@
                     </div>
                 </div>
 
-                <label>Date of installation<input type="date" id="installDate" name="installDate" required></label>
+                <label for="installDate">Date of installation</label>
+                <input type="date" id="installDate" name="installDate" required>
                 <div class="feature-header">
                     <div>Which features did you find useful in the product?</div>
                     <div class="sub-text">(Check all that apply)</div>
@@ -60,9 +61,11 @@
                     <label for="design"><input type="checkbox" name="design" value="yes" id="design">Design</label>
                 </div>
 
-                <label>Written Review (Optional)<textarea id="review" name="review" rows="5" cols="30"
-                        placeholder="Write your comments here..."></textarea></label>
-                <label>Your Name (Optional)<input type="text" id="name" name="name"></label>
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="5" cols="30"
+                    placeholder="Write your comments here..."></textarea>
+                <label for="name">Your Name (Optional)</label>
+                <input type="text" id="name" name="name">
                 <input type="submit" value="Post My Review">
             </fieldset>
         </form>
@@ -72,7 +75,7 @@
         <p>&copy; <span id="currentyear"></span> ☀️ Pam Christison ☀️ New Mexico, USA</p>
         <p><span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/form.js"></script>
+
 </body>
 
 </html>
