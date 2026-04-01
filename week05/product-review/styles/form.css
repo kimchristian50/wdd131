@@ -54,6 +54,23 @@ h1 {
     font-size: 0.9rem;
 }
 
+.review-form>fieldset>label:has(+ :required)::after,
+.review-form>fieldset>label:has(select:required)::after {
+    content: " *";
+    color: #d00000;
+    font-weight: bold;
+}
+
+.rating-container .label::after {
+    content: " *";
+    color: #d00000;
+    font-weight: bold;
+}
+
+.star-rating label::after {
+    content: none;
+}
+
 .review-form input[type="text"],
 .review-form input[type="date"],
 .review-form select,
@@ -102,16 +119,6 @@ h1 {
     margin: 1rem 0 2rem 0;
     box-shadow: 1px 1px 4px var(--accent7-color);
     cursor: pointer;
-}
-
-.review-form input:required,
-.review-form select:required {
-    border-left: solid 8px var(--accent5-color);
-}
-
-.review-form input:required:valid,
-.review-form select:required:valid {
-    border-left: solid 8px rgb(100, 123, 100);
 }
 
 .review-form .feature-header {
@@ -192,6 +199,13 @@ h1 {
     }
 }
 
+.form-note {
+    font-size: 0.8rem;
+    color: #d00000;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
 h2 {
     text-align: center;
     padding: 30px;
@@ -226,19 +240,19 @@ footer {
     }
 
     /* .review-form fieldset { */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* padding: 2rem; */
-        /* Give the fields more "air" inside the box */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* padding: 2rem; */
+    /* Give the fields more "air" inside the box */
     /* } */
 
     /* .review-form input[type="submit"] { */
-        /* width: auto; */
-        /* On desktop, the button doesn't have to be full-width */
-        /* padding: 1rem 3rem; */
-        /* margin: 1rem 0 2rem 6rem; */
-        /* display: block; */
+    /* width: auto; */
+    /* On desktop, the button doesn't have to be full-width */
+    /* padding: 1rem 3rem; */
+    /* margin: 1rem 0 2rem 6rem; */
+    /* display: block; */
     /* } */
 
 
