@@ -200,8 +200,8 @@ h1 {
 }
 
 .form-note {
-    font-size: 0.8rem;
-    color: #d00000;
+    /* font-size: 0.8rem; */
+    color: #9c0101;
     margin-bottom: 1rem;
     font-style: italic;
 }
