@@ -63,7 +63,7 @@ h1 {
     border: solid 1px var(--accent6-color);
     border-radius: 6px;
     padding: 0.75rem;
-    color: var(--accent7-color);
+    color: var(--accent2-color);
     width: 100%;
     max-width: 400px;
 }
@@ -74,8 +74,21 @@ h1 {
 }
 
 .review-form input[type="checkbox"] {
-    padding: 0;
+    transform: scale(1.5);
+    transform-origin: center;
+    padding: 10px;
     margin-top: 0;
+    margin-right: 12px;
+}
+
+.review-form label[for="durability"],
+.review-form label[for="ease"],
+.review-form label[for="performance"],
+.review-form label[for="design"] {
+    padding-top: 1.2rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .review-form input[type="submit"] {
@@ -197,4 +210,36 @@ footer {
 .label {
     text-align: center;
     padding: 1rem;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 600px) {
+    body {
+        max-width: 650px;
+        /* Let the form be slightly wider on big screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+        /* Make the title stand out more on desktop */
+        margin-top: 3rem;
+    }
+
+    /* .review-form fieldset { */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* padding: 2rem; */
+        /* Give the fields more "air" inside the box */
+    /* } */
+
+    /* .review-form input[type="submit"] { */
+        /* width: auto; */
+        /* On desktop, the button doesn't have to be full-width */
+        /* padding: 1rem 3rem; */
+        /* margin: 1rem 0 2rem 6rem; */
+        /* display: block; */
+    /* } */
+
+
 }
