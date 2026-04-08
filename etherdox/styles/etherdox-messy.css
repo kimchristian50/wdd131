@@ -1,0 +1,439 @@
+:root {
+    --primary-color: #fcf9e8;
+    --primary2-color: #fafaf9;
+    --accent-color: #000814;
+    --accent2-color: #001d3d;
+    --accent3-color: #033566;
+    --accent4-color: #274c77;
+    --accent5-color: #6096ba;
+    --accent6-color: #a3cef1;
+    --accent7-color: #c0c1bd;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 349;
+}
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+
+/* Control logo size for mobile */
+.logo-img {
+    width: 80px;
+    height: auto;
+}
+
+/* The nav from my temples album with the hamburger menu */
+/* Mobile View */
+#menu {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--accent-color);
+    order: 2;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    order: 3;
+    flex-basis: 100%;
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    color: var(--accent2-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navigation li:last-child a {
+    border-bottom: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: var(--accent2-color);
+    background-color: var(--primary2-color);
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav p {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+    padding-left: 1rem;
+}
+
+nav.show .navigation {
+    display: block;
+}
+
+nav.show .navigation li {
+    display: block;
+    text-align: center;
+}
+
+nav.show p {
+    display: none;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+/* back to the rest of the original css */
+
+nav,
+p,
+section,
+ul {
+    margin: 15px;
+    padding: 8px;
+    color: var(--accent2-color);
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent3-color);
+    margin: .75rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent4-color);
+    margin: .75rem;
+}
+
+.intro p,
+#price-info p,
+#product-info p,
+#booking-info p {
+    margin: 1rem 4rem;
+    font-size: 1.2rem;
+}
+
+.section-heading h3 {
+    margin: 0;
+}
+
+.session-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 10px;
+    margin: 0;
+}
+
+.session-info div {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.session-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.session-info div:hover {
+    transform: translateY(-10px);
+}
+
+.session-info a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    display: block;
+}
+
+.session-info figcaption {
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--accent4-color);
+    text-decoration: none;
+}
+
+/* Gallery Album */
+
+.gallery-label {
+    margin-top: 2rem;
+}
+
+.album-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.album-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.album-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border: 5px solid white;
+}
+
+/* Price info section */
+#price-info li {
+    margin: 0rem 4rem;
+    font-size: 1rem;
+}
+
+/* Contact form section */
+
+#booking-info {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: grid;
+    grid-gap: 15px;
+    font-size: 1rem;
+    margin: 2rem 0;
+}
+
+.form-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.form-item.column1 {
+    grid-template-columns: 1fr;
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-group legend {
+    margin: 0;
+    float: left;
+    grid-column: 1;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.radio-item {
+    display: flex;
+    padding: 2px;
+}
+
+.radio-item label {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.radio-options-wrapper {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.newsletter-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.newsletter-item input {
+    order: -1;
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    margin: 0 auto;
+    background-color: var(--accent3-color);
+    color: var(--primary2-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(94, 120, 248, 0.3);
+    transition: all 0.3s ease;
+    width: 100%;
+    justify-self: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(56, 60, 102, 0.4);
+}
+
+/* Footer */
+
+footer {
+    margin: 30px;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-top: 2px solid var(--accent2-color);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .album-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .album-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .navigation {
+        display: flex;
+        flex-basis: auto;
+        order: 2;
+        justify-content: flex-end;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .logo-img {
+        width: 150px;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: var(accent-color);
+        padding: 1rem 1rem;
+        display: block;
+        width: 100%;
+        transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    }
+
+    .navigation a:hover {
+        transform: scale(1.02);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+        background-color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--accent-color);
+    }
+
+    nav p {
+        display: block;
+        font-size: 2rem;
+        margin-left: 2rem;
+        order: 1;
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+        display: flex;
+    }
+
+}

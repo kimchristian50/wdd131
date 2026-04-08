@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Pam Christison</title>
+    <meta name="description"
+        content="Pam Christison | WDD 131 - Dynamic Web Fundamentals | Final Project - Etherdox Photography - Contact page">
+    <meta name="author" content="Pam Christison">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@349&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/etherdox.css">
+    <script src="scripts/etherdox.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.webp" alt="logo for Etherdox Photography cameo silhouette" width="227" height="264"
+                loading="lazy">
+
+            <nav>
+                <a id="menu" href="#" aria-label="Open navigation menu"></a>
+                <ul class="navigation">
+                    <li><a href="etherdox-photography.html">Home</a></li>
+                    <li><a href="family-photography.html">Families</a></li>
+                    <li><a href="senior-photography.html">Graduates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="booking-info">
+            <h1>Contact form</h1>
+            <p>Do you have any questions? I'm always happy to chat with clients or someone potentially interested in a
+                photo session! Include your phone number if you'd like a call back.</p>
+            <form class="contact-form">
+                <div class="form-item">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="useremail">Email</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
+
+                <fieldset class="radio-group">
+                    <legend>Message Purpose</legend>
+                    <div class="radio-options-wrapper">
+                        <div class="radio-item">
+                            <input type="radio" id="general" name="purpose" value="general">
+                            <label for="general">General Inquiry</label>
+                        </div>
+
+                        <div class="radio-item">
+                            <input type="radio" id="book" name="purpose" value="book">
+                            <label for="book">Book a Session</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-item column1">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Type here"></textarea>
+                </div>
+                <div class="newsletter-item">
+                    <label for="newsletter">Please subscribe me to the quarterly newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                </div>
+                <button type="submit">Get in Touch!</button>
+            </form>
+            <img src="images/phonecall.webp" alt="fun Albuquerque children photography" width="500" height="606"
+                loading="lazy">
+        </section>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Etherdox Photography ~ New Mexico, USA</p>
+            <p><span id="lastModified"></span></p>
+        </footer>
+    </main>
+</body>
+
+</html>
