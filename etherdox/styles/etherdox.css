@@ -148,6 +148,10 @@ nav.show .navigation {
     display: none;
 }
 
+.mySlides.active {
+    display: block;
+}
+
 /* Caption text - turned off because not sure it's worth it*/
 /* .text {
     color: #f2f2f2;
@@ -532,7 +536,8 @@ footer {
 
     /* Hide hamburger */
 
-    .navigation, nav.show .navigation {
+    .navigation,
+    nav.show .navigation {
         display: flex;
         flex-direction: row;
         width: auto;
